@@ -1,0 +1,177 @@
+/* style.css */
+body {
+    min-height: 720vh;
+    background-image: linear-gradient( #18122B, #393053  );
+    margin: 0;
+    
+}
+
+.header h1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    left: 100px;
+    
+    color: white;
+}
+
+
+/* Adjust Bootstrap Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+     /* Adjust background color as needed */
+}
+@font-face{
+    font-family: myFont;
+    src: url(fonts/nasa.otf);
+}
+
+.navbar-brand {
+    font-family:myFont;
+    
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 15px;
+    font-size: 25px;
+    font-family: myFont;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #635985;
+}
+
+.nav-link:hover {
+    transition: 0.5s ease-in-out;
+    color: #E9E8E8;
+}
+
+#carouselContainer {
+    position: relative;
+    /* You can adjust the height as needed or remove it for auto height */
+    width: 100%; /* Set the width to 100% */
+    margin: 0 auto; /* Center the carousel horizontally */
+    overflow: hidden;
+    border-style: solid;
+    border-color: #635985;
+    border-radius: 20px;
+}
+
+
+.carousel img {
+    width: 480px;
+    height: 400px;
+    object-fit: contain;
+   
+    
+    
+}
+.description{
+    align-items: center;
+    
+    
+ 
+    
+    position: absolute;
+    right: 50px;
+    left: 50px;
+    
+    bottom: -30px;
+    
+}
+.narrative{
+    margin:30px;
+    border-style: solid;
+    border-color: #393053;
+    border-radius: 20px;
+}
+.Team {
+    text-align: center;
+}
+
+.Team h1, .Team h2 {
+    font-family: 'myFont', sans-serif;
+    color: #E9E8E8;
+    margin: 30px;
+}
+
+.Team .center-container {
+    position: relative;
+}
+
+.Team .center {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    /* Add rounded corners for a circular shape */
+    overflow: hidden; /* Ensure the image stays within the rounded shape */
+}
+.Team .left-align{
+    position: absolute;
+    left: 500px;
+
+}
+.Team .p1{
+    position: absolute;
+    left: 500px;
+}
+.Team .left-align1{
+    position: relative;
+    
+
+}
+.core{
+    border-style: solid;
+    border-color: #393053;
+}
+
+.wc h1{
+    position: relative;
+    bottom: -650px;
+    font-family: myFont;
+    color: #E9E8E8;
+    border-style:outset;
+    
+}
+.wc img{
+    margin-top: 10px;
+    position: relative;
+    bottom: -650px;
+    left:7px;
+}
+.wc p1{
+    font-family: myFont;
+    position: relative;
+    bottom: -780px;
+    left:-200px;
+    color: #E9E8E8;
+    font-size: 20px;
+
+}
+.recent-events{
+    position: relative;
+    text-align: center;
+    bottom: -730px;
+    font-family: myFont;
+      
+}
+.card{
+    margin-top: 10px;
+}
+.footer {
+    position:relative;
+    bottom: -750px;
+    width: 100%;
+    color: white; /* Adjust the text color */
+    text-align: center;
+    padding: 15px;
+    font-family: myFont;
+
+}
