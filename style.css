@@ -1,9 +1,11 @@
 /* style.css */
+/* style.css */
+
 body {
-    min-height: 720vh;
-    background-image: linear-gradient( #18122B, #393053  );
+    min-height: 100vh;
+    background: linear-gradient(#18122B, #393053);
     margin: 0;
-    
+    font-family: myFont; /* Applying myFont to the entire document */
 }
 
 .header h1 {
@@ -11,26 +13,23 @@ body {
     top: 10px;
     right: 10px;
     left: 100px;
-    
     color: white;
 }
-
 
 /* Adjust Bootstrap Navbar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-     /* Adjust background color as needed */
 }
-@font-face{
+
+@font-face {
     font-family: myFont;
     src: url(fonts/nasa.otf);
 }
 
 .navbar-brand {
-    font-family:myFont;
-    
+    font-family: myFont;
 }
 
 .navbar-nav {
@@ -41,7 +40,6 @@ body {
 .nav-item {
     margin: 15px;
     font-size: 25px;
-    font-family: myFont;
 }
 
 .nav-link {
@@ -56,45 +54,36 @@ body {
 
 #carouselContainer {
     position: relative;
-    /* You can adjust the height as needed or remove it for auto height */
-    width: 100%; /* Set the width to 100% */
-    margin: 0 auto; /* Center the carousel horizontally */
+    width: 100%;
+    margin: 0 auto;
     overflow: hidden;
-    border-style: solid;
-    border-color: #635985;
+    border: 2px solid #635985; /* Simplified border style */
     border-radius: 20px;
 }
 
-
 .carousel img {
-    width: 480px;
-    height: 400px;
-    object-fit: contain;
-   
-    
-    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
-.description{
-    align-items: center;
-    
-    
- 
-    
+
+.description {
     position: absolute;
     right: 50px;
     left: 50px;
-    
     bottom: -30px;
-    
+    margin: 0; /* Removed margin */
 }
-.narrative{
-    margin:30px;
-    border-style: solid;
-    border-color: #393053;
+
+.narrative {
+    margin: 30px;
+    border: 2px solid #393053; /* Simplified border style */
     border-radius: 20px;
 }
+
 .Team {
     text-align: center;
+    margin: 30px;
 }
 
 .Team h1, .Team h2 {
@@ -109,69 +98,78 @@ body {
 
 .Team .center {
     display: block;
-    margin: 0 auto; /* Center horizontally */
-    /* Add rounded corners for a circular shape */
-    overflow: hidden; /* Ensure the image stays within the rounded shape */
+    margin: 0 auto;
+    overflow: hidden;
 }
-.Team .left-align{
-    position: absolute;
-    left: 500px;
 
-}
-.Team .p1{
-    position: absolute;
+.Team .left-align {
+    position: relative;
     left: 500px;
 }
-.Team .left-align1{
-    position: relative;
-    
 
-}
-.core{
-    border-style: solid;
-    border-color: #393053;
+.Team .p1 {
+    position: relative;
+    left: 500px;
 }
 
-.wc h1{
+.Team .left-align1 {
     position: relative;
-    bottom: -650px;
+}
+
+.core {
+    border: 2px solid #393053; /* Simplified border style */
+    margin: 30px;
+}
+
+.wc h1 {
     font-family: myFont;
     color: #E9E8E8;
-    border-style:outset;
-    
+    border: 2px outset #E9E8E8; /* Simplified border style */
+    margin: 30px;
 }
-.wc img{
+
+.wc img {
     margin-top: 10px;
-    position: relative;
-    bottom: -650px;
-    left:7px;
 }
-.wc p1{
+
+.wc p1 {
     font-family: myFont;
-    position: relative;
-    bottom: -780px;
-    left:-200px;
     color: #E9E8E8;
     font-size: 20px;
+}
 
-}
-.recent-events{
-    position: relative;
+.recent-events {
     text-align: center;
-    bottom: -730px;
+    margin: 30px;
     font-family: myFont;
-      
 }
-.card{
+
+.card {
     margin-top: 10px;
 }
+
 .footer {
-    position:relative;
-    bottom: -750px;
     width: 100%;
-    color: white; /* Adjust the text color */
+    color: white;
     text-align: center;
     padding: 15px;
     font-family: myFont;
+    margin: 30px;
+}
+.committee-member {
+    margin: 20px; /* Adjust the margin as needed */
+    text-align: center;
+    font-family: myFont;
+    color: #E9E8E8; /* Center the content within each member block */
 
+}
+.team-member{
+    font-family: myFont;
+    color: #E9E8E8;
+}
+.team-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* or "contain" based on your preference */
+   
 }
