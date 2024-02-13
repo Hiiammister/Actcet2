@@ -84,6 +84,9 @@ body {
 .Team {
     text-align: center;
     margin: 30px;
+    border: 2px solid #393053;
+    border-radius: 20px;
+
 }
 
 .Team h1, .Team h2 {
@@ -117,15 +120,20 @@ body {
 }
 
 .core {
-    border: 2px solid #393053; /* Simplified border style */
+    /* Simplified border style */
     margin: 30px;
 }
 
 .wc h1 {
     font-family: myFont;
     color: #E9E8E8;
-    border: 2px outset #E9E8E8; /* Simplified border style */
+     /* Simplified border style */
     margin: 30px;
+}
+.wc{
+    border: 2px solid #393053;
+    margin: 30px;
+    border-radius: 20px;
 }
 
 .wc img {
@@ -170,6 +178,7 @@ body {
 .team-img {
     width: 200px;
     height: 200px;
-    object-fit: cover; /* or "contain" based on your preference */
+    object-fit: cover;
+    margin:10px; /* or "contain" based on your preference */
    
 }
