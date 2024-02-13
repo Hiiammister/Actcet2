@@ -2,183 +2,236 @@
 /* style.css */
 
 body {
-    min-height: 100vh;
-    background: linear-gradient(#18122B, #393053);
-    margin: 0;
-    font-family: myFont; /* Applying myFont to the entire document */
+  min-height: 100vh;
+  background: linear-gradient(#18122b, #393053);
+  margin: 0;
+  font-family: myFont; /* Applying myFont to the entire document */
 }
 
 .header h1 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    left: 100px;
-    color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: 100px;
+  color: white;
 }
 
 /* Adjust Bootstrap Navbar styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+  font-family: myFont;
+  font-size: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 @font-face {
-    font-family: myFont;
-    src: url(fonts/nasa.otf);
+  font-family: myFont;
+  src: url(fonts/nasa.otf);
 }
 
 .navbar-brand {
-    font-family: myFont;
+  font-family: myFont;
 }
 
 .navbar-nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-item {
-    margin: 15px;
-    font-size: 25px;
+  margin: 15px;
+  font-size: 25px;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: #635985;
+  text-decoration: none;
+  color: #635985;
 }
 
 .nav-link:hover {
-    transition: 0.5s ease-in-out;
-    color: #E9E8E8;
+  transition: 0.5s ease-in-out;
+  color: #e9e8e8;
 }
 
-#carouselContainer {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    border: 2px solid #635985; /* Simplified border style */
-    border-radius: 20px;
+.carouselContainer {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #635985; /* Simplified border style */
+  border-radius: 20px;
 }
 
 .carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  image-resolution: inherit;
+  border-radius: 12px;
 }
 
 .description {
-    position: absolute;
-    right: 50px;
-    left: 50px;
-    bottom: -30px;
-    margin: 0; /* Removed margin */
+  position: absolute;
+  right: 50px;
+  left: 50px;
+  bottom: -30px;
+  margin: 0; /* Removed margin */
 }
 
 .narrative {
-    margin: 30px;
-    border: 2px solid #393053; /* Simplified border style */
-    border-radius: 20px;
+  margin: 30px;
+  border: 2px solid #393053; /* Simplified border style */
+  border-radius: 20px;
 }
+
+/* @media screen and (max-width: 600px) {
+  .Club {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+} */
 
 .Team {
-    text-align: center;
-    margin: 30px;
-    border: 2px solid #393053;
-    border-radius: 20px;
-
+  text-align: center;
+  margin: 30px;
+  border: 2px solid #393053;
+  border-radius: 20px;
 }
 
-.Team h1, .Team h2 {
-    font-family: 'myFont', sans-serif;
-    color: #E9E8E8;
-    margin: 30px;
+@media screen and (max-width: 600px) {
+  .Intro {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Info {
+    font-size: 32px;
+  }
+}
+
+.Team h1,
+.Team h2 {
+  font-family: "myFont", sans-serif;
+  color: #e9e8e8;
+  margin: 30px;
 }
 
 .Team .center-container {
-    position: relative;
+  position: relative;
 }
 
 .Team .center {
-    display: block;
-    margin: 0 auto;
-    overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .Team .left-align {
-    position: relative;
-    left: 500px;
+  position: relative;
+  left: 500px;
 }
 
 .Team .p1 {
-    position: relative;
-    left: 500px;
+  position: relative;
+  left: 500px;
 }
 
 .Team .left-align1 {
-    position: relative;
+  position: relative;
 }
 
 .core {
-    /* Simplified border style */
-    margin: 30px;
+  /* Simplified border style */
+  margin: 30px;
 }
 
 .wc h1 {
-    font-family: myFont;
-    color: #E9E8E8;
-     /* Simplified border style */
-    margin: 30px;
+  font-family: myFont;
+  color: #e9e8e8;
+  /* Simplified border style */
+  margin: 30px;
 }
-.wc{
-    border: 2px solid #393053;
-    margin: 30px;
-    border-radius: 20px;
+.wc {
+  border: 2px solid #393053;
+  margin: 30px;
+  border-radius: 20px;
 }
 
 .wc img {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .wc p1 {
-    font-family: myFont;
-    color: #E9E8E8;
-    font-size: 20px;
+  font-family: myFont;
+  color: #e9e8e8;
+  font-size: 20px;
 }
 
 .recent-events {
-    text-align: center;
-    margin: 30px;
-    font-family: myFont;
+  text-align: center;
+  margin: 30px;
+  font-family: myFont;
 }
 
 .card {
-    margin-top: 10px;
+  margin-top: 10px;
+  border-radius: 12px;
+}
+
+.card-title {
+  font-size: 28px;
+}
+
+.card-text {
+  padding: 12px;
 }
 
 .footer {
-    width: 100%;
+  /* width: 100%;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
     font-family: myFont;
     margin: 30px;
-}
-.committee-member {
-    margin: 20px; /* Adjust the margin as needed */
-    text-align: center;
-    font-family: myFont;
-    color: #E9E8E8; /* Center the content within each member block */
+    align-items: center;
+    justify-content: center; */
 
+  color: white;
+  flex-direction: row;
+  font-family: myFont;
+  text-align: center;
+  row-gap: 24px;
+  margin-bottom: 24px;
 }
-.team-member{
-    font-family: myFont;
-    color: #E9E8E8;
+
+@media screen and (max-width: 600px) {
+  .row {
+    gap: 24px;
+    font-size: 12px;
+  }
+}
+
+.committee-member {
+  border-radius: 12px;
+  margin: 20px; /* Adjust the margin as needed */
+  text-align: center;
+  font-family: myFont;
+  color: #e9e8e8; /* Center the content within each member block */
+}
+.team-member {
+  font-family: myFont;
+  color: #e9e8e8;
 }
 .team-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin:10px; /* or "contain" based on your preference */
-   
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin: 10px; /* or "contain" based on your preference */
+}
+
+.member-name {
+  margin-top: 8px;
 }
